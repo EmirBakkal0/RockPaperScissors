@@ -1,0 +1,23 @@
+*{
+    background: yellow;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+button{
+    padding: 15px;
+    border: 1px solid gray;
+    background: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+}
+button:hover{
+    background-color: #04AA6D; /* Green */
+    color: white;
+}
