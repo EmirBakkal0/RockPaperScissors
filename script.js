@@ -39,9 +39,6 @@ let compScore = 0;
 let game = () => {
 
 
-    header.textContent="Your win count:" +playerScore ;
-    header2.textContent="computers win count:" +compScore ;
-
     const rockBtn = document.querySelector("#btn1")
     const paperBtn = document.querySelector("#btn2")
     const scissorBtn = document.querySelector("#btn3")
@@ -94,12 +91,16 @@ const didPlayerWin= (playerScore,compScore) => {
     if(playerScore>=5 && compScore<5){
         console.log("win");
         matchResult.textContent="Player wins!!";
+        document.querySelector(".buttons").style.display="none";
+
     }
 };
 const didCompWin = (playerScore,compScore) => {
-    if(playerScore<5 && compScore>5) {
+    if(playerScore<5 && compScore>=5) {
         matchResult.textContent = "Computer wins!!";
         console.log("lose");
+        document.querySelector(".buttons").style.display="none";
+
     }
 };
 

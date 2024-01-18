@@ -16,8 +16,18 @@ button{
     text-align: center;
     display: inline-block;
     font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px #999;
+    margin-bottom: 5px  ;
 }
 button:hover{
     background-color: #04AA6D; /* Green */
     color: white;
+
+}
+button:active{
+    background-color: #3e8e41;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+
 }
