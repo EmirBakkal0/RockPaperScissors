@@ -31,3 +31,12 @@ button:active{
     transform: translateY(4px);
 
 }
+h1{
+    color:blue;
+}
+
+
+h3{
+    color:red;
+
+}

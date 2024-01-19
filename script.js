@@ -3,6 +3,12 @@ const scoreDiv=document.createElement("div");
 const matchResult=document.createElement("h2");
 const header=document.createElement("h3");
 const header2=document.createElement("h3");
+const playerSel=document.createElement("h2");
+const compSel=document.createElement("h2");
+
+scoreDiv.appendChild(playerSel);
+scoreDiv.appendChild(compSel);
+
 scoreDiv.appendChild(matchResult);
 scoreDiv.appendChild(header);
 scoreDiv.appendChild(header2);
@@ -45,7 +51,11 @@ let game = () => {
 
 
     rockBtn.addEventListener('click', () => {
-        let score = playRound("rock", getRandomChoice());
+        let compChoice=getRandomChoice();
+        let score = playRound("rock", compChoice);
+        playerSel.innerText="You chose: ROCK";
+        compSel.innerText="Computer chose: "+compChoice.toUpperCase();
+
         if (score > 0) {
             playerScore++;
         } else if (score < 0) {
@@ -57,8 +67,10 @@ let game = () => {
         didCompWin(playerScore,compScore);
     });
     paperBtn.addEventListener('click', () => {
-
-        let score = playRound("paper", getRandomChoice());
+        let compChoice=getRandomChoice();
+        let score = playRound("paper", compChoice);
+        playerSel.innerText="You chose: PAPER";
+        compSel.innerText="Computer chose: "+compChoice.toUpperCase();
         if (score > 0) {
             playerScore++;
         } else if (score < 0) {
@@ -70,8 +82,10 @@ let game = () => {
         didCompWin(playerScore,compScore);
     });
     scissorBtn.addEventListener('click', () => {
-
-        let score = playRound("scissors", getRandomChoice());
+        let compChoice=getRandomChoice();
+        let score = playRound("scissors", compChoice);
+        playerSel.innerText="You chose: SCISSORS"
+        compSel.innerText="Computer chose:"+compChoice.toUpperCase()
         if (score > 0) {
             playerScore++;
         } else if (score < 0) {
