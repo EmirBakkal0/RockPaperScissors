@@ -30,11 +30,11 @@ let playRound= (playerSelection,computerSelection) => {
         return 0;
     }
     else if(playerSelection=="rock" && computerSelection == "scissors" || playerSelection=="paper" && computerSelection == "rock" || playerSelection=="scissors" && computerSelection == "paper" ){
-        matchResult.textContent=(`You win! ${playerSelection} beats ${computerSelection}. `);
+        matchResult.textContent=(`You win! ${playerSelection.toUpperCase()} beats ${computerSelection.toUpperCase()}. `);
         return 1;
     }
     else if(computerSelection=="rock" && playerSelection == "scissors" || computerSelection=="paper" && playerSelection == "rock" || computerSelection=="scissors" && playerSelection == "paper" ){
-        matchResult.textContent=(`You lose! ${playerSelection} loses to ${computerSelection}. `);
+        matchResult.textContent=(`You lose! ${playerSelection.toUpperCase()} loses to ${computerSelection.toUpperCase()}. `);
         return -1;
     }
 }
