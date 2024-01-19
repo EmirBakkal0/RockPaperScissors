@@ -26,15 +26,15 @@ let playRound= (playerSelection,computerSelection) => {
     playerSelection=playerSelection.toLowerCase();
     console.log("Computer chooses: "+computerSelection)
     if(playerSelection==computerSelection){
-        matchResult.textContent="The match is a tie";
+        matchResult.textContent="The match is a tie.";
         return 0;
     }
     else if(playerSelection=="rock" && computerSelection == "scissors" || playerSelection=="paper" && computerSelection == "rock" || playerSelection=="scissors" && computerSelection == "paper" ){
-        matchResult.textContent=(`You win! ${playerSelection} beats ${computerSelection} `);
+        matchResult.textContent=(`You win! ${playerSelection} beats ${computerSelection}. `);
         return 1;
     }
     else if(computerSelection=="rock" && playerSelection == "scissors" || computerSelection=="paper" && playerSelection == "rock" || computerSelection=="scissors" && playerSelection == "paper" ){
-        matchResult.textContent=(`You lose! ${playerSelection} loses to ${computerSelection} `);
+        matchResult.textContent=(`You lose! ${playerSelection} loses to ${computerSelection}. `);
         return -1;
     }
 }
@@ -62,7 +62,7 @@ let game = () => {
             compScore++;
         }
         header.textContent="Your win count:" +playerScore ;
-        header2.textContent="computers win count:" +compScore ;
+        header2.textContent="Computers win count:" +compScore ;
         didPlayerWin(playerScore,compScore);
         didCompWin(playerScore,compScore);
     });
@@ -77,7 +77,7 @@ let game = () => {
             compScore++;
         }
         header.textContent="Your win count:" +playerScore ;
-        header2.textContent="computers win count:" +compScore ;
+        header2.textContent="Computers win count:" +compScore ;
         didPlayerWin(playerScore,compScore);
         didCompWin(playerScore,compScore);
     });
@@ -92,7 +92,7 @@ let game = () => {
             compScore++;
         }
         header.textContent="Your win count:" +playerScore ;
-        header2.textContent="computers win count:" +compScore ;
+        header2.textContent="Computers win count:" +compScore ;
         didPlayerWin(playerScore,compScore);
         didCompWin(playerScore,compScore);
     });

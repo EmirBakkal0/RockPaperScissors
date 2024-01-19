@@ -1,12 +1,25 @@
 *{
     background: yellow;
+    font-family: "Calisto MT", serif;
 }
+
 
 .center{
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.bottom{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 button{
