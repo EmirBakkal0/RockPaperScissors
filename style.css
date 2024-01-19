@@ -1,6 +1,7 @@
 *{
-    background: yellow;
+    background: rgb(17 24 39);
     font-family: "Calisto MT", serif;
+    color: lightgray;
 }
 
 
@@ -20,12 +21,15 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+
 }
 
 button{
+
+    color: white;
     padding: 15px;
     border: 1px solid gray;
-    background: white;
+    background-color: darkred;
     text-align: center;
     display: inline-block;
     font-size: 20px;
@@ -34,7 +38,7 @@ button{
     margin-bottom: 5px  ;
 }
 button:hover{
-    background-color: #04AA6D; /* Green */
+    background-color: red;
     color: white;
 
 }
@@ -45,11 +49,14 @@ button:active{
 
 }
 h1{
-    color:blue;
+    color: white;
 }
 
+h2{
+    color: gold;
+}
 
-h3{
-    color:red;
+h4{
+    color:dodgerblue;
 
 }

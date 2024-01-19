@@ -1,10 +1,10 @@
 
 const scoreDiv=document.createElement("div");
 const matchResult=document.createElement("h2");
-const header=document.createElement("h3");
-const header2=document.createElement("h3");
-const playerSel=document.createElement("h2");
-const compSel=document.createElement("h2");
+const header=document.createElement("h4");
+const header2=document.createElement("h4");
+const playerSel=document.createElement("h3");
+const compSel=document.createElement("h3");
 
 scoreDiv.appendChild(playerSel);
 scoreDiv.appendChild(compSel);
